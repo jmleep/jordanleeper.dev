@@ -16,11 +16,12 @@
     </div>
   </div>
   <div class="relative z-10">
-    <app-contact-links></app-contact-links>
     <div class="mb-16">
       <app-about-me></app-about-me>
     </div>
     <app-blog-posts></app-blog-posts>
+    @defer {
     <app-projects></app-projects>
+    }
   </div>
 </div>

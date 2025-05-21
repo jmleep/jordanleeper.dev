@@ -1,18 +1,11 @@
 import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
-
-import { ContactLinksComponent } from './contact-links/contact-links.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { BlogPostsComponent } from './blog-posts/blog-posts.component';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    ContactLinksComponent,
-    ProjectsComponent,
-    AboutMeComponent,
-    BlogPostsComponent,
-  ],
+  imports: [ProjectsComponent, AboutMeComponent, BlogPostsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

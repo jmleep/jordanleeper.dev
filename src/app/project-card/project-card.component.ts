@@ -84,12 +84,7 @@ export class ProjectCardComponent {
     return this.colorMap.default;
   });
 
-  cardClasses = computed(
-    () =>
-      `${this.cardImage() ? 'h-100' : 'h-70'} border-2 ${
-        this.colorScheme().border
-      }`
-  );
+  cardClasses = computed(() => `h-100 border-2 ${this.colorScheme().border}`);
 
   primaryButtonClasses = computed(() => this.colorScheme().primary);
 
