@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "dist/jordan-leeper-dev/browser/",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
