@@ -1,0 +1,17 @@
+<section class="mb-16">
+  <h2 class="text-3xl dark:text-white font-semibold mb-8">Projects</h2>
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full"
+  >
+    @for (project of projects; track project.title) {
+    <app-project-card
+      [cardImage]="project.cardImage"
+      [title]="project.title"
+      [demoUrl]="project.demoUrl"
+      [sourceUrl]="project.sourceUrl"
+      [tech]="project.tech"
+      [description]="project.description"
+    ></app-project-card>
+    }
+  </div>
+</section>
